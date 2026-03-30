@@ -37,6 +37,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="Assignment 1 Creating Reproducible Report_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="Assignment 1 Creating Reproducible Report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="Assignment 1 Creating Reproducible Report_files/libs/bootstrap/bootstrap-efbb37e9afcc02144ebbc7afd12a776f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<style>html{ scroll-behavior: smooth; }</style>
+<script src="Assignment 1 Creating Reproducible Report_files/libs/kePrint-0.0.1/kePrint.js"></script>
+
+<link href="Assignment 1 Creating Reproducible Report_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
 
 </head>
@@ -114,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="fig-purchase_and_site_visit" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-purchase_and_site_visit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Assignment-1-Creating-Reproducible-Report_files/figure-html/fig-purchase_and_site_visit-1.png" class="img-fluid figure-img" width="672">
+<img src="Assignment-1-Creating-Reproducible-Report_files/figure-html/fig-purchase_and_site_visit-1.png" class="img-fluid figure-img" width="480">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-purchase_and_site_visit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Relationship between purchase amount and site visits
@@ -123,7 +128,7 @@ Figure&nbsp;1: Relationship between purchase amount and site visits
 </div>
 </div>
 </div>
-<p>The plot above presents the relationship between purchase amount and the number of site visits. Interestingly, the highest purchase amount is associated with 6 visits rather than the highest number of visits, which is 13, suggesting that more site visits do not necessarily lead to higher purchase amounts. This indicates that the relationship between site visits and purchase amount may not be straightforward. Additionally, there are visits that resulted in no purchase, suggesting that not every visit will translate into revenue for the company. Therefore, for our analysis in the next section, we can keep in mind that higher marketing spend may lead to a greater number of site visits, but not always higher revenue.</p>
+<p>The plot above presents the relationship between purchase amount and the number of site visits. Interestingly, the highest purchase amount is associated with 6 visits rather than the highest number of visits, which is 13, suggesting that more site visits do not necessarily lead to higher purchase amounts. This indicates that the relationship between site visits and purchase amount may not be straightforward. Additionally, there are visits that resulted in no purchase, suggesting that not every visit will translate into revenue for the company.</p>
 </section>
 <section id="summary-of-data---return-on-marketing-spend" class="level3">
 <h3 class="anchored" data-anchor-id="summary-of-data---return-on-marketing-spend">Summary of data - Return on marketing spend</h3>
@@ -135,21 +140,14 @@ Table&nbsp;1: Average Return on Marketing Spend by Customer Segment
 </figcaption>
 <div aria-describedby="tbl-roms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<table class="cell caption-top table table-sm table-striped small">
-<colgroup>
-<col style="width: 10%">
-<col style="width: 23%">
-<col style="width: 23%">
-<col style="width: 25%">
-<col style="width: 17%">
-</colgroup>
+<table class="table cell caption-top table-sm table-striped small">
 <thead>
 <tr class="header">
-<th style="text-align: left;">Segment</th>
-<th style="text-align: right;">Average purchase amount</th>
-<th style="text-align: right;">Average marketing spend</th>
-<th style="text-align: right;">Return on Marketing Spend</th>
-<th style="text-align: right;">Count of Customer</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Segment</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Average purchase amount</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Average marketing spend</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Return on Marketing Spend</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Count of Customer</th>
 </tr>
 </thead>
 <tbody>
@@ -181,7 +179,7 @@ Table&nbsp;1: Average Return on Marketing Spend by Customer Segment
 </figure>
 </div>
 </div>
-<p>The table above presents the average purchase amount and average marketing spend per customer segment, along with the Return on Marketing Spend (ROMS), the key metric of interest as it reflects the revenue generated per dollar spent on the marketing campaign. A Return on Marketing Spend greater than 1 indicates that the revenue generated exceeds the marketing spend. However, as shown in the table, none of the segments achieved a Return on Marketing Spend greater than 1, thus the best performing segment is the one with the Return on Marketing Spend closest to 1.</p>
+<p>The table presents the average purchase amount, average marketing spend, and Return on Marketing Spend (ROMS) per customer segment. ROMS greater than 1 indicates that revenue exceeds marketing spend, however none of the segments achieved this.</p>
 </section>
 </section>
 </section>
@@ -192,7 +190,7 @@ Table&nbsp;1: Average Return on Marketing Spend by Customer Segment
 <div id="fig-purchase_and_marketing_spend" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-purchase_and_marketing_spend-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Assignment-1-Creating-Reproducible-Report_files/figure-html/fig-purchase_and_marketing_spend-1.png" class="img-fluid figure-img" width="672">
+<img src="Assignment-1-Creating-Reproducible-Report_files/figure-html/fig-purchase_and_marketing_spend-1.png" class="img-fluid figure-img" width="480">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-purchase_and_marketing_spend-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: Relationship between marketing spend and purchase amount
@@ -207,7 +205,7 @@ Figure&nbsp;2: Relationship between marketing spend and purchase amount
 <div id="fig-marketing_spend_visits" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-marketing_spend_visits-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Assignment-1-Creating-Reproducible-Report_files/figure-html/fig-marketing_spend_visits-1.png" class="img-fluid figure-img" width="672">
+<img src="Assignment-1-Creating-Reproducible-Report_files/figure-html/fig-marketing_spend_visits-1.png" class="img-fluid figure-img" width="480">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-marketing_spend_visits-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;3: Relationship between marketing spend and number of visits
@@ -216,13 +214,13 @@ Figure&nbsp;3: Relationship between marketing spend and number of visits
 </div>
 </div>
 </div>
-<p>Furthermore, this plot presents the relationship between marketing spend and the number of site visits, examining whether higher marketing spend results in greater website traffic. The model has an R-squared of 0.36 indicating that approximately 36 % of the variation in site visits can be explained by marketing spend. This is relatively low, suggesting that marketing spend alone may not be sufficient to determine the number of site visits and that other factors should also be taken into consideration.</p>
+<p>Furthermore, this plot presents the relationship between marketing spend and the number of site visits, examining whether higher marketing spend results in greater website traffic. The model has an R-squared of 0.36 indicating that approximately 36 % of the variation in site visits can be explained by marketing spend.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-roms" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-roms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Assignment-1-Creating-Reproducible-Report_files/figure-html/fig-roms-1.png" class="img-fluid figure-img" width="672">
+<img src="Assignment-1-Creating-Reproducible-Report_files/figure-html/fig-roms-1.png" class="img-fluid figure-img" width="480">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-roms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;4: Return on Marketing Spend by Customer Segment
@@ -231,11 +229,11 @@ Figure&nbsp;4: Return on Marketing Spend by Customer Segment
 </div>
 </div>
 </div>
-<p>The plot above further elaborates on <a href="#tbl-roms" class="quarto-xref">Table&nbsp;1</a>, focusing on the return on marketing spend at the individual customer level. The <strong>return variable</strong> represents the ratio of purchase amount to marketing spend for each customer. A return value greater than 100% indicates that the customer’s purchase amount exceeds the marketing spend invested in them, meaning the campaign generated a positive return for that customer. This plot provides additional insight by focusing specifically on the monetary relationship between marketing spend and purchase amount across all three segments.</p>
+<p>The plot above further elaborates on <a href="#tbl-roms" class="quarto-xref">Table&nbsp;1</a>, focusing on the return on marketing spend at the individual customer level. The <strong>return variable</strong> represents the ratio of purchase amount to marketing spend for each customer. A return value greater than 100% indicates that the customer’s purchase amount exceeds the marketing spend invested in them, meaning the campaign generated a positive return for that customer.</p>
 <p>The final result to answer the question: <strong>does higher marketing spend per customer lead to higher purchase amounts?</strong>. From <a href="#fig-purchase_and_marketing_spend" class="quarto-xref">Figure&nbsp;2</a>, approximately 60 % of the variation in purchase amount can be directly explained by marketing spend. This falls within a moderate range, suggesting that while there is a connection between the two variables, it is not particularly strong. Therefore, while higher marketing spend may lead to higher purchase amounts, other factors outside of marketing spend should also be taken into consideration, such as product positioning and competitor activity, which may account for the remaining variation in purchase amount.</p>
 <p>Additionally, <a href="#fig-marketing_spend_visits" class="quarto-xref">Figure&nbsp;3</a> examines the relationship between marketing spend and the number of site visits, as it is expected that customers who interact with the company’s ads are more likely to visit the website. However, with only approximately 36 % of the variation in site visits explained by marketing spend, the relationship is relatively weak, suggesting that site visits are not directly driven by marketing spend alone.</p>
-<p>While answering the research question is important, the findings alone are not sufficient to develop a better marketing campaign without further analysis. <a href="#tbl-roms" class="quarto-xref">Table&nbsp;1</a> and <a href="#fig-roms" class="quarto-xref">Figure&nbsp;4</a> provide additional insight beyond answering the question, helping to shape the future direction of the company’s marketing strategy. An important consideration is: <strong>is the increase in purchase amount enough to cover the marketing cost?</strong> The Return on Marketing Spend column in <a href="#tbl-roms" class="quarto-xref">Table&nbsp;1</a> calculates the average revenue generated relative to marketing spend for each customer segment, helping identify whether purchase amounts cover marketing costs. Segmenting by customer type allows the company to identify which segments yield the highest return and prioritise them in future campaigns. <a href="#fig-roms" class="quarto-xref">Figure&nbsp;4</a> further enriches this picture by showing the distribution of return on marketing spend beyond just the average. The Consumer segment has the highest median return on marketing spend with multiple outliers exceeding 200%, while Enterprise has the lowest median and no outliers. SMB’s median is similar to Consumer’s but with fewer outliers. This information suggests that future campaigns should prioritise the Consumer segment, while also investigating the high-return outliers to understand what drove their exceptional returns and whether those personalised marketing campaign can be applied more broadly.</p>
-<p>To conclude, higher marketing spend did lead to higher purchase amounts, though the relationship is moderate rather than strong, and other factors should be considered. In terms of return on marketing spend, future personalised marketing campaigns should focus on the Consumer segment and selectively on SMB. The personalised strategies applied to customers with exceptionally high return rates should be studied and adapted to improve returns across the broader customer base.</p>
+<p>While answering the research question is important, the findings alone are not sufficient to develop a better marketing campaign without further analysis. <a href="#tbl-roms" class="quarto-xref">Table&nbsp;1</a> and <a href="#fig-roms" class="quarto-xref">Figure&nbsp;4</a> provide additional insight beyond answering the question, helping to shape the future direction of the company’s marketing strategy. An important consideration is: <strong>is the increase in purchase amount enough to cover the marketing cost?</strong> The Return on Marketing Spend (ROMS) column in <a href="#tbl-roms" class="quarto-xref">Table&nbsp;1</a> calculates the average revenue generated relative to marketing spend for each customer segment, helping identify whether purchase amounts cover marketing costs. Segmenting by customer type allows the company to identify which segments yield the highest return and prioritise them in future campaigns. <a href="#fig-roms" class="quarto-xref">Figure&nbsp;4</a> further enriches this picture by showing the distribution of ROMS beyond just the average. The Consumer segment has the highest median ROMS with multiple outliers exceeding 200%, while Enterprise has the lowest median and no outliers. SMB’s median is similar to Consumer’s but with fewer outliers. This information suggests that future campaigns should prioritise the Consumer segment, while also investigating the high-return outliers to understand what drove their exceptional returns and whether those personalised marketing campaign can be applied more broadly.</p>
+<p>To conclude, higher marketing spend did lead to higher purchase amounts, though the relationship is moderate rather than strong, and other factors should also be considered. Beyond the research question, the return on marketing spend analysis provides additional business insight into whether the campaign was profitable across segments. The personalised strategies applied to customers with exceptionally high return rates should be studied and adapted to improve returns across the broader customer base.</p>
 </section>
 
 </main>
@@ -645,4 +643,5 @@ Figure&nbsp;4: Return on Marketing Spend by Customer Segment
 
 
 
+<script src="Assignment 1 Creating Reproducible Report_files/libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

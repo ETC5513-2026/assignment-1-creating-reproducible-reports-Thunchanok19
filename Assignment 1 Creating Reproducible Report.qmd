@@ -3,6 +3,8 @@ title: "Assignment 1 Creating Reproducible Report"
 format: 
   html:
       toc: true
+      toc-location: right
+      smooth-scroll: true
   pdf: 
       toc: true
 ---
