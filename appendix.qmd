@@ -1,0 +1,7 @@
+---
+title: "Declaration of use of AI"
+format: html
+---
+
+Please find the link to the conversation history with AI as linked
+[AI chat history](https://claude.ai/share/0bce0158-721d-44f3-822b-9ed838ade36d)
